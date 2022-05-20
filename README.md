@@ -1,29 +1,20 @@
 # dice_bot
 
-Welcome to your bot: dice_bot!
+[BCDice](https://github.com/bcdice/BCDice)を使ったダイスボット。
 
-TODO: Write your bot's description here.
+## 使い方
 
-## Usage
+`/roll`でダイスを振ることができます。
 
-TODO: Write your bot's usage here.
+## セルフホスト
 
-## Features
+1. リポジトリをクローンします。
+2. `bundle install`します。
+3. Discord Bot PortalからBotを作成します。
+4. `.env.sample`を`.env`にコピーし、トークンを入力します。
+5. `discorb setup`を実行します。
+6. `discorb run`を実行します。
 
-TODO: Write your bot's features here.
+## ライセンス
 
-## How to host
-
-1. Clone the repository.
-2. Run `bundle install`.
-3. Get your bot's token from the Discord developer portal.
-4. Copy `.env.sample` to `.env` and fill in the token.
-5. Run `bundle exec discorb run`.
-
-TODO: Write your own customizations here.
-
-## License
-
-TODO: Write your bot's license here.
-  See https://choosealicense.com/ for more information.
-
+MITライセンスで公開しています。
