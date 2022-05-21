@@ -1,4 +1,4 @@
-# dice_bot
+# BCDice4d
 
 [BCDice](https://github.com/bcdice/BCDice)を使ったダイスボット。
 
