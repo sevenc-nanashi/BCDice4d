@@ -18,7 +18,7 @@ client.slash "roll", "ダイスを振ります。", {
     description: "ゲームシステム。",
     type: :string,
     autocomplete: proc { |interaction, game_system|
-      fuzzy_pattern = Regexp.new(game_system.split("").map { |c| Regexp.escape(c) }.join(".*"))
+      fuzzy_pattern = Regexp.new(game_system.split("").map { |c| Regexp.escape(c) }.join(".*"), Regexp::IGNORECASE)
       DICES
         .filter_map { |dice| (dice::NAME.match(fuzzy_pattern) || dice::ID.match(fuzzy_pattern)) && [dice, dice::ID.match(fuzzy_pattern) || dice::NAME.match(fuzzy_pattern)] }
         .sort_by { |dice, match| match.length }
